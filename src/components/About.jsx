@@ -1,25 +1,27 @@
 import './About.css'
+import profileImg from '../assets/images/profile.jpg';
+
 
 export const About = () => {
   const skills = [
-    'JavaScript (ES6+)', 
-    'Java',
+    'Java', 
+    'JavaScript',
     'React',
     'Spring Boot',
     'AWS',
     'Python',
-    'Docker',
+    'Bash',
     'Cloud Foundry'
   ]
   
   return (
     <section id="about" className="about-section">
-      <h2 className="numbered-heading">About Me</h2>
-      
+      <h2 className="numbered-heading overline">About Me</h2>
+      <h2 className="section-title">My Story</h2>
       <div className="about-content">
         <div className="about-text">
           <p>
-            Hello! I'm Brian, a senior software engineer who enjoys building things that live on the internet.
+            Hello! I'm Brian, a senior software engineer who enjoys building things on an enterprise level.
             My interest in software development started back during my college days at the
             University of Arizona, where I graduated with a BS in Computer Science and a minor in Psychology in 2018.
           </p>
@@ -36,7 +38,7 @@ export const About = () => {
             <a href="https://www.capitalone.com/" target="_blank" rel="noopener noreferrer" className="green-link">
               a finance technology company
             </a>.
-            My focus these days is building accessible, inclusive products and digital experiences at Capital One.
+            These days, I focus on building accessible, inclusive products and digital experiences at Capital One.
           </p>
           
           <p>
@@ -53,12 +55,14 @@ export const About = () => {
             ))}
           </ul>
         </div>
-        
         <div className="about-image-container">
           <div className="about-image-wrapper">
             <div className="about-image">
-              {/* Replace with your own image */}
-              <div className="placeholder-image"></div>
+              <img 
+                src={profileImg} 
+                alt="Brian Lane" 
+                className="img-fluid" 
+              />
             </div>
           </div>
         </div>

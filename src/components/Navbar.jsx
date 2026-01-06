@@ -35,10 +35,12 @@ export const Navbar = () => {
           <ol>
             <li><a href="#about" onClick={() => setMenuOpen(false)}><span>01.</span> About</a></li>
             <li><a href="#experience" onClick={() => setMenuOpen(false)}><span>02.</span> Experience</a></li>
-            <li><a href="#contact" onClick={() => setMenuOpen(false)}><span>03.</span> Contact</a></li>
+            <li><a href="#projects" onClick={() => setMenuOpen(false)}><span>03.</span> Projects</a></li>
+            <li><a href="#how" onClick={() => setMenuOpen(false)}><span>04.</span> How</a></li>
+            <li><a href="#contact" onClick={() => setMenuOpen(false)}><span>05.</span> Contact</a></li>
           </ol>
           <div className="resume-button">
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="/BrianLaneResume2026.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
       </nav>

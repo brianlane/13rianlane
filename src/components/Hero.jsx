@@ -10,8 +10,8 @@ export const Hero = () => {
         <p className="hero-description">
           I'm a senior software engineer specializing in building exceptional digital experiences.
           Currently, I'm focused on building accessible, human-centered products at {' '}
-          <a href="https://www.capitalone.com/" target="_blank" rel="noopener noreferrer" className="green-link">
-            Capital One
+          <a href="https://www.https://www.americanexpress.com/" target="_blank" rel="noopener noreferrer" className="green-link">
+            American Express
           </a>.
         </p>
         <div className="hero-button-container">

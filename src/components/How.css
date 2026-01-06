@@ -1,0 +1,148 @@
+.steps-list {
+  counter-reset: step-counter;
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.steps-list li {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  color: var(--light-slate);
+  line-height: 1.5;
+}
+
+.steps-list li::before {
+  counter-increment: step-counter;
+  content: "0" counter(step-counter) ".";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: var(--green);
+  font-family: var(--font-mono);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.steps-list li strong {
+  color: var(--lightest-slate);
+  font-weight: 600;
+}.how-section .section-title {
+  font-size: clamp(40px, 5vw, 60px);
+  margin: 0 0 40px;
+  color: var(--lightest-slate);
+}
+
+.how-section {
+  max-width: 900px;
+}
+
+.how-section-info {
+  margin: 30px 0;
+  color: var(--slate);
+}
+
+.ip-address-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  margin: 10px 0;
+  color: var(--light-slate);
+  font-family: var(--font-mono);
+  font-size: 14px;
+}
+
+.how-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 50px;
+}
+
+.how-text {
+  color: var(--slate);
+}
+
+.how-text p {
+  margin: 0 0 15px;
+  line-height: 1.5;
+}
+
+.tech-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  gap: 0 10px;
+  padding: 0;
+  margin: 20px 0 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.tech-list li {
+  position: relative;
+  margin-bottom: 10px;
+  padding-left: 20px;
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.tech-list li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--green);
+  font-size: 14px;
+  line-height: 12px;
+}
+
+.how-code-container {
+  position: relative;
+  max-width: 100%;
+}
+
+.code-snippet {
+  border-radius: 5px;
+  overflow: hidden;
+  background-color: var(--light-navy);
+  font-size: 13px;
+  box-shadow: 0 10px 30px -15px rgba(2, 12, 27, 0.7);
+}
+
+.code-header {
+  display: flex;
+  align-items: center;
+  padding: 8px 10px;
+  background-color: var(--lightest-navy);
+  font-family: var(--font-mono);
+  font-size: 12px;
+}
+
+.file-name {
+  color: var(--lightest-slate);
+}
+
+.code-block {
+  margin: 0;
+  padding: 20px;
+  overflow-x: auto;
+  font-family: var(--font-mono);
+  line-height: 1.5;
+  color: var(--light-slate);
+}
+
+code {
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 768px) {
+  .how-content {
+    display: block;
+  }
+  
+  .how-code-container {
+    margin: 50px auto 0;
+  }
+  
+  .code-block {
+    padding: 15px;
+  }
+}

@@ -3,6 +3,8 @@ import { Navbar } from './components/Navbar'
 import { Hero } from './components/Hero'
 import { About } from './components/About'
 import { Experience } from './components/Experience'
+import { Projects } from './components/Projects'
+import { How } from './components/How'
 import { Contact } from './components/Contact'
 import { Social } from './components/Social'
 import './App.css'
@@ -32,6 +34,8 @@ function App() {
         <Hero />
         <About />
         <Experience />
+        <Projects />
+        <How />
         <Contact />
       </main>
       <Social />
