@@ -40,7 +40,7 @@ export const Navbar = () => {
             <li><a href="#contact" onClick={() => setMenuOpen(false)}><span>05.</span> Contact</a></li>
           </ol>
           <div className="resume-button">
-            <a href="/Lane_Brian_Resume_2026.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
+            <a href="/LaneBrianResume2026.pdf" target="_blank" rel="noopener noreferrer">Resume</a>
           </div>
         </div>
       </nav>
